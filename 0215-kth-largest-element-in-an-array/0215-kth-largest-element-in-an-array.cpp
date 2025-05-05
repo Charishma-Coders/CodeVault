@@ -1,11 +1,25 @@
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k) {
-        priority_queue<int,vector<int>,greater<int>> pq;
-        for (int i=0;i<nums.size();i++){
-            pq.push(nums[i]);
-            if (pq.size()>k) pq.pop();
+    int partition(vector<int>& nums,int l,int r){
+        int pivot=nums[r];
+        int i=l;
+        for (int j=l;j<r;j++){
+            if (nums[j]>pivot){
+                swap(nums[i],nums[j]);
+                i++;
+            }
         }
-        return pq.top();
+        swap(nums[i],nums[r]);
+        return i;
+    }
+    int quickSelect(vector<int>& nums,int l,int r,int k){
+        if (l==r) return nums[l];
+        int p=partition(nums,l,r);
+        if (k==p) return nums[p];
+        else if (k>p) return quickSelect(nums,p+1,r,k);
+        return quickSelect(nums,l,p-1,k);
+    }
+    int findKthLargest(vector<int>& nums, int k) {
+        return quickSelect(nums,0,nums.size()-1,k-1);
     }
 };
