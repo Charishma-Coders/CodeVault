@@ -1,0 +1,34 @@
+vector<int> arr = {3, 5, 4, 4};
+
+Still not consecutive (has duplicates), but overallSum == indexSum can be true in certain cases due to coincidence.
+
+Fix: Add a uniqueness check
+Add a set to ensure all elements are unique:
+
+unordered_set<int> seen;
+for (int i = 0; i < n; ++i) {
+    if (!seen.insert(arr[i]).second) return false; // duplicate found
+}
+
+Optional: Add range check
+Also, to be even more robust, check that the max - min + 1 == n:
+
+int maxEle = *max_element(arr.begin(), arr.end());
+if (maxEle - smallEle + 1 != n) return false;
+
+Final Optimal Solution (O(n) time, O(n) space):
+
+bool areConsecutives(vector<int>& arr) {
+    int n = arr.size();
+    int smallEle = *min_element(arr.begin(), arr.end());
+    int maxEle = *max_element(arr.begin(), arr.end());
+
+    if (maxEle - smallEle + 1 != n) return false;
+
+    unordered_set<int> seen;
+    for (int i = 0; i < n; ++i) {
+        if (!seen.insert(arr[i]).second) return false; // duplicate
+    }
+
+    return true;
+}
