@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/0215-kth-largest-element-in-an-array) |
+| [2872-largest-element-in-an-array-after-merge-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2872-largest-element-in-an-array-after-merge-operations) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -25,4 +26,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0806-domino-and-tromino-tiling](https://github.com/Charishma-Coders/CodeVault/tree/master/0806-domino-and-tromino-tiling) |
+## Greedy
+|  |
+| ------- |
+| [2872-largest-element-in-an-array-after-merge-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2872-largest-element-in-an-array-after-merge-operations) |
 <!---LeetCode Topics End-->
