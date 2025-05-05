@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/0215-kth-largest-element-in-an-array) |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2872-largest-element-in-an-array-after-merge-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2872-largest-element-in-an-array-after-merge-operations) |
 ## Divide and Conquer
 |  |
@@ -30,4 +31,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2872-largest-element-in-an-array-after-merge-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2872-largest-element-in-an-array-after-merge-operations) |
+## String
+|  |
+| ------- |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2137-final-value-of-variable-after-performing-operations) |
+## Simulation
+|  |
+| ------- |
+| [2137-final-value-of-variable-after-performing-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2137-final-value-of-variable-after-performing-operations) |
 <!---LeetCode Topics End-->
