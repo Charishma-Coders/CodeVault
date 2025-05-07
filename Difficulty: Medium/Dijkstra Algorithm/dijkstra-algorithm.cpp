@@ -18,17 +18,21 @@ class Solution {
             adj[u].push_back({v,w});
             adj[v].push_back({u,w});
         }
-        priority_queue<P,vector<P>,greater<P>> pq;
-        pq.push({0,src});
-        while (!pq.empty()){
-            int dist=pq.top().first;
-            int i=pq.top().second;
-            pq.pop();
+        set<P> st;
+        st.insert({0,src});
+        while (!st.empty()){
+            auto it=*st.begin();
+            int dist=it.first;
+            int i=it.second;
+            st.erase(it);
             for (auto each:adj[i]){
                 int total=dist+each.second;
                 if (total<result[each.first]){
+                    if (result[each.first]!=INT_MAX){
+                        st.erase({result[each.first],each.first});
+                    }
                     result[each.first]=total;
-                    pq.push({total,each.first});
+                    st.insert({total,each.first});
                 }
             }
         }
