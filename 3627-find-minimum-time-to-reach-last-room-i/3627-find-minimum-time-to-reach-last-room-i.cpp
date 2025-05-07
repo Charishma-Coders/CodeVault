@@ -1,32 +1,39 @@
 class Solution {
 public:
     int minTimeToReach(vector<vector<int>>& moveTime) {
-        int n = moveTime.size();
-        int m = moveTime[0].size();
-        vector<vector<int>> dist(n, vector<int>(m, INT_MAX));
-        queue<pair<pair<int, int>, int>> que;
+        typedef pair<int,pair<int,int>> P;
+        int n=moveTime.size();
+        int m=moveTime[0].size();
 
-        que.push({{0, 0}, 0});
-        dist[0][0] = 0;
+        vector<vector<int>> result(n,vector<int>(m,INT_MAX));
+        vector<vector<int>> dir{{0,1},{0,-1},{1,0},{-1,0}};
+        priority_queue<P,vector<P>,greater<P>> pq;
 
-        vector<vector<int>> dir{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        pq.push({0,{0,0}});
+        result[0][0]=0;
 
-        while (!que.empty()) {
-            auto [coord, currDist] = que.front(); que.pop();
-            int x = coord.first, y = coord.second;
+        while (!pq.empty()){
+            int t=pq.top().first;
+            pair<int,int> currCell=pq.top().second;
+            int i=currCell.first;
+            int j=currCell.second;
+            if (i==n-1 && j==m-1) return result[n-1][m-1];
+            pq.pop();
+            for (auto each:dir){
+                int newI=i+each[0];
+                int newJ=j+each[1];
 
-            for (auto& d : dir) {
-                int newX = x + d[0], newY = y + d[1];
-                if (newX >= 0 && newX < n && newY >= 0 && newY < m) {
-                    int wait = max(0, moveTime[newX][newY] - currDist);
-                    int newTime = currDist + wait + 1;
-                    if (newTime < dist[newX][newY]) {
-                        dist[newX][newY] = newTime;
-                        que.push({{newX, newY}, newTime});
+                if (newI>=0 && newI<n && newJ>=0 && newJ<m){
+                    int wait=max(0,moveTime[newI][newJ]-t);
+                    int arrTime=t+wait+1;
+                    if (result[newI][newJ]>arrTime){
+                        result[newI][newJ]=arrTime;
+                        pq.push({arrTime,{newI,newJ}});
                     }
                 }
             }
         }
-        return dist[n - 1][m - 1];
+
+        return -1;
     }
 };
