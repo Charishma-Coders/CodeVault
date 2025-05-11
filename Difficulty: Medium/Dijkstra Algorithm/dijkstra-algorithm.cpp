@@ -10,32 +10,34 @@ class Solution {
   public:
     vector<int> dijkstra(int V, vector<vector<int>> &edges, int src) {
         typedef pair<int,int> P;
+        
         vector<int> result(V,INT_MAX);
-        vector<vector<P>> adj(V);
         result[src]=0;
-        for (auto row:edges){
-            int u=row[0],v=row[1],w=row[2];
-            adj[u].push_back({v,w});
-            adj[v].push_back({u,w});
+        
+        priority_queue<P,vector<P>,greater<P>> pq;
+        pq.push({0,src}); // {dist,src}
+        
+        vector<vector<P>> adj(V);
+        for (auto each:edges){
+            int u=each[0],v=each[1],value=each[2];
+            adj[u].push_back({v,value});
+            adj[v].push_back({u,value});
         }
-        set<P> st;
-        st.insert({0,src});
-        while (!st.empty()){
-            auto it=*st.begin();
-            int dist=it.first;
-            int i=it.second;
-            st.erase(it);
-            for (auto each:adj[i]){
-                int total=dist+each.second;
-                if (total<result[each.first]){
-                    if (result[each.first]!=INT_MAX){
-                        st.erase({result[each.first],each.first});
-                    }
-                    result[each.first]=total;
-                    st.insert({total,each.first});
+        
+        while (!pq.empty()){
+            int currDist=pq.top().first;
+            int currNode=pq.top().second;
+            pq.pop();
+            for (auto each:adj[currNode]){
+                int totalDist=each.second+currDist;
+                int destNode=each.first;
+                if (totalDist<result[destNode]){
+                    result[destNode]=totalDist;
+                    pq.push({totalDist,destNode});
                 }
             }
         }
+        
         return result;
     }
 };
