@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/0215-kth-largest-element-in-an-array) |
+| [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Quickselect
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Matrix
@@ -61,14 +63,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Shortest Path
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
 <!---LeetCode Topics End-->
