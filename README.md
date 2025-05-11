@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/0215-kth-largest-element-in-an-array) |
+| [1325-path-with-maximum-probability](https://github.com/Charishma-Coders/CodeVault/tree/master/1325-path-with-maximum-probability) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2551-apply-operations-to-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/2551-apply-operations-to-an-array) |
 | [2872-largest-element-in-an-array-after-merge-operations](https://github.com/Charishma-Coders/CodeVault/tree/master/2872-largest-element-in-an-array-after-merge-operations) |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/Charishma-Coders/CodeVault/tree/master/0215-kth-largest-element-in-an-array) |
 | [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
+| [1325-path-with-maximum-probability](https://github.com/Charishma-Coders/CodeVault/tree/master/1325-path-with-maximum-probability) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Quickselect
 |  |
@@ -55,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
+| [1325-path-with-maximum-probability](https://github.com/Charishma-Coders/CodeVault/tree/master/1325-path-with-maximum-probability) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Matrix
 |  |
@@ -65,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0744-network-delay-time](https://github.com/Charishma-Coders/CodeVault/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Charishma-Coders/CodeVault/tree/master/0803-cheapest-flights-within-k-stops) |
+| [1325-path-with-maximum-probability](https://github.com/Charishma-Coders/CodeVault/tree/master/1325-path-with-maximum-probability) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/Charishma-Coders/CodeVault/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 ## Depth-First Search
 |  |
